@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Welcome to Your Finance Dashboard</h1>
+            <button id="logout-btn">Logout</button>
+        </header>
+        <section class="summary-section">
+            <h2>Financial Summary</h2>
+            <div class="summary-content">
+                <div class="summary-item">
+                    <h3>Total Savings</h3>
+                    <input type="number" id="total-savings-input" placeholder="Enter total savings">
+                </div>
+                <div class="summary-item">
+                    <h3>Investment Portfolio</h3>
+                    <p id="investment-portfolio">000</p>
+                </div>
+                <div class="summary-item">
+                    <h3>Spending Overview</h3>
+                    <p id="spending-overview">000 this month</p>
+                </div>
+            </div>
+        </section>
+        <section class="add-delete-data-section">
+            <h2>Add/Delete Expense</h2>
+            <form id="expense-form">
+                <input type="text" id="expense-name" placeholder="Expense Name" required>
+                <input type="number" id="expense-amount" placeholder="Amount" required>
+                <input type="date" id="expense-date" required>
+                <button type="submit">Add Expense</button>
+            </form>
+            <ul id="expense-list"></ul>
+        </section>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
